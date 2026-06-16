@@ -90,10 +90,11 @@ class Player(Entity):
 
     def update(self):
         x = self.position
-        x[1] =  x[1] + 7*1.25
-        x[2] =  x[2] + 8*1.25
+        x[1] = x[1] + 8.75
+        x[2] = x[2] + 10
         camera.set_position(x)
         camera.look_at(self)
+        camera.rotation_z = 0
 
         moved = True
         if held_keys['a']:
