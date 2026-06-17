@@ -18,7 +18,7 @@ class Player(Entity):
     }
 
     FINISH_LINE_Z_COORDS = {
-        0: -8, # This makes it so that the player cannot reach finish line on 'level' 0.
+        0: -8,
         1: -8,
         2: -8,
         3: -8
